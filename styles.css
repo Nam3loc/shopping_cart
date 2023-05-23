@@ -29,9 +29,11 @@ body {
     text-align: center;
 
     width: 20em;
-    height: 2rem;
+    height: 2.5rem;
 
-    margin-top: 30em;
+    margin-top: 20em;
+
+    font-size: 1rem;
 }
 
 #add-to-cart-button {
@@ -41,9 +43,11 @@ body {
     border-style: hidden;
 
     width: 20em;
-    height: 2rem;
+    height: 2.5rem;
 
     margin-top: 1em;
+
+    font-size: 1rem;
 }
 
 #add-to-cart-button:hover {
@@ -54,9 +58,31 @@ body {
 
 #shopping-list {
     margin: 20px 0 0 0;
+    padding-bottom: 20px;;
+    width: 100vw;
+    max-height: 40vh;
+    max-width: 450px;
+    overflow: scroll;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
 #shopping-list > li{
-    /* border: 2px solid black;
-    list-style-type: none; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 2px rgb(154, 154, 154);
+    list-style-type: none;
+
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgb(248, 248, 248);
+
+    font-size: 1rem;
+
+    cursor: pointer;
 }
