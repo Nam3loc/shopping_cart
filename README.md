@@ -19,6 +19,10 @@ Deployed Link: https://finstacart.netlify.app/
 * [Contact](#contact)
 
 ## General Information
+Duration: 2 days
+
+Did this basic project to learn how Firebase's realtime database works
+
 The shopping cart app is designed to solve the problem of forgetting ingredients while grocery shopping. It provides a simple interface where users can enter ingredients they need to purchase, and the app will store them in a cart for easy access. Users can mark off ingredients as they obtain them, removing them from the cart.
 
 The purpose of the project is to streamline the shopping experience and ensure that all necessary ingredients are remembered and obtained. The app aims to save time and prevent the frustration of forgetting items.
