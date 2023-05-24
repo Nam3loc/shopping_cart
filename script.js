@@ -34,8 +34,6 @@ onValue(ingredientsInDB, function (snapshot) {
             let currentIngredient = ingredientsArray[i];
             let currentIngredientID = currentIngredient[0];
             let currentIngredientName = currentIngredient[1];
-            // console.log('current id: ', currentIngredientID);
-            // console.log('current title: ', currentIngredientName);
 
             addItem(currentIngredient);
             // deleteIngredient(currentIngredient);
@@ -67,7 +65,3 @@ inputField.addEventListener('keypress', (evt) => {
         addToCartButton.click();
     }
 })
-
-// https://console.firebase.google.com/u/0/project/shopping-cart-2bc6e/database/shopping-cart-2bc6e-default-rtdb/data
-// https://www.youtube.com/watch?v=UFD4SP91tSM
-// 1:24:50

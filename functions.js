@@ -19,9 +19,7 @@ export const addItem = (currentIngredient) => {
     listOfIngredients.append(newListElement);
 
     newListElement.addEventListener('click', (evt) => {
-        // console.log('test', itemID);
         let exactLocationInDB = ref(database, `ingredients/${itemID}`)
-        // console.log('test location', exactLocationInDB);
         remove(exactLocationInDB);
     })
 }

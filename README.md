@@ -3,6 +3,7 @@
 > A shopping cart app that allows you to enter ingredients and adds them to a cart for easy reference while at the store. You can also remove ingredients from the cart when you have obtained them. 
 
 [Shopping Cart](https://finstacart.netlify.app/)
+
 Deployed Link: https://finstacart.netlify.app/
 
 ## Table of Contents
