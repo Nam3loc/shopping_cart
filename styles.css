@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -10,14 +12,73 @@ body {
     text-align: center;
 
     background-color: #ebeef3;
+    user-select: none;
 }
 
-.page-container {
+#page-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+#shopping-cart-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 280px;
+    position: relative;
+    left: -20px;
+}
+
+#shopping-cart-img:hover {
+    animation-name: img-grow;
+    animation-duration: .3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+
+    /* animation-name: img-shrink;
+    animation-duration: .3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards; */
+}
+
+@keyframes img-grow {
+    0% {
+        max-width: 280px;
+    }
+    25% {
+        max-width: 285px;
+    }
+    50% {
+        max-width: 290px;
+    }
+    75% {
+        max-width: 295px;
+    }
+    100% {
+        max-width: 300px;
+    }
+}
+
+/* @keyframes img-shrink {
+    0% {
+        max-width: 300px;
+    }
+    25% {
+        max-width: 295px;
+    }
+    50% {
+        max-width: 290px;
+    }
+    75% {
+        max-width: 285px;
+    }
+    100% {
+        max-width: 280px;
+    }
+} */
 
 #input-field {
     background-color: #d8dce8;
@@ -30,8 +91,6 @@ body {
 
     width: 20em;
     height: 2.5rem;
-
-    margin-top: 20em;
 
     font-size: 1rem;
 }
@@ -51,17 +110,19 @@ body {
 }
 
 #add-to-cart-button:hover {
-    border-style: solid;
-    border-color: rgb(109, 182, 206);
+    background-color: rgb(165, 0, 0);
+    box-shadow: 2px 2px 2px rgb(121, 121, 121);
     cursor: pointer;
 }
 
 #shopping-list {
     margin: 20px 0 0 0;
-    padding-bottom: 20px;;
+    padding: 0 20px 20px 20px;
     width: 100vw;
     max-height: 40vh;
     max-width: 450px;
+    
+    /* Making the shopping list scroll and hiding the scrollbars on desktop */
     overflow: scroll;
 
     display: flex;
@@ -69,6 +130,13 @@ body {
     align-items: center;
     flex-wrap: wrap;
     gap: 5px;
+}
+
+@media only screen and (min-width: 992px){
+    #shopping-list {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
 }
 
 #shopping-list > li{
@@ -85,4 +153,9 @@ body {
     font-size: 1rem;
 
     cursor: pointer;
+}
+
+#shopping-list > li:hover {
+    background-color: #FFECC7;
+    box-shadow: 2px 2px 2px rgb(121, 121, 121);
 }

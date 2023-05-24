@@ -1,9 +1,13 @@
 // Imports
-import { inputField, listOfIngredients, database } from "./script.js";
+import { inputField, listOfIngredients, database, errorMessage } from "./script.js";
 import { ref, remove } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js';
 
 export const clearInputField = () => {
     return inputField.value = '';
+}
+
+export const clearErrorMessage = () => {
+    return errorMessage.innerHTML = '';
 }
 
 export const addItem = (currentIngredient) => {
